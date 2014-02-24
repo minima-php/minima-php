@@ -9,11 +9,5 @@
 		 <span class="flash-notice">Length 8 to 16</span><br/>
 	</fieldset>
 
-	<fieldset>
-		<legend>Contact Informations</legend>
-		<?php echo $form->input('fullname') ?><br/>
-		<?php echo $form->input('address') ?><br/>
-	</fieldset>
-
 	<input type="submit"/>
 </form>

@@ -35,11 +35,11 @@ abstract class Base
 	/** @var array Values (like $_POST) */
 	protected $values;
 
-	/** @var  array Extra variables */
+	/** @var array Extra variables */
 	protected $variables;
 
 	/**
-	 * @param $values
+	 * @param array $values
 	 * @param array $variables
 	 */
 	public function __construct($values, array $variables = array())
@@ -62,6 +62,9 @@ abstract class Base
 		return !count($this->errors);
 	}
 
+	/**
+	 * @return array
+	 */
 	public function getValues()
 	{
 		return array_extract($this->values, $this->fields);
@@ -130,8 +133,7 @@ abstract class Base
 
 	/**
 	 * Additional validations for children classes
-	 *
-	 * @override
+	 * Override if needed
 	 */
 	protected function validate()
 	{ }

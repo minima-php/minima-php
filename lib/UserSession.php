@@ -2,6 +2,7 @@
 
 class UserSession
 {
+	/** @var Model\User */
 	private $user = null;
 
 	public function __construct(PDO $db, $key = 'user_id')

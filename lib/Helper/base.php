@@ -27,6 +27,10 @@ function url($url = '')
 
 /**
  * Creates a link to something
+ *
+ * @param string $url
+ * @param string $text
+ * @return string HTML link
  */
 function link_to($url, $text)
 {

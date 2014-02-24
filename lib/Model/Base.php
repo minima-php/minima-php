@@ -24,7 +24,7 @@ class Base implements \ArrayAccess
 	protected $values;
 
 	/**
-	 * @param $values
+	 * @param array $values
 	 */
 	public function __construct($values)
 	{
@@ -65,6 +65,9 @@ class Base implements \ArrayAccess
 		return $bool;
 	}
 
+	/**
+	 * @return array
+	 */
 	public function getValues()
 	{
 		return $this->values;
