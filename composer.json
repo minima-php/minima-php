@@ -4,7 +4,10 @@
   "autoload": {
     "psr-0": {
       "": "lib"
-    }
+    },
+    "files": [
+      "lib/Minima/Helper/base.php"
+    ]
   },
   "authors": [
     {
