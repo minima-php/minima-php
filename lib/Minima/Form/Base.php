@@ -73,6 +73,8 @@ abstract class Base
 	/**
 	 * Validate built-in filters
 	 * Override {@link self::validate()} to add additional validations
+     *
+     * @TODO this should probably not follow the `validateX` naming scheme
 	 */
 	private function validateBuiltins()
 	{
@@ -95,7 +97,19 @@ abstract class Base
 		}
 	}
 
-	/**
+    /**
+     * @param $cols
+     */
+    protected function validateFilter($cols)
+    {
+        foreach ($cols as $col => $filter) {
+            if (!filter_var($this->values[$col], $filter, array('flags' => FILTER_NULL_ON_FAILURE))) {
+                $this->errors[$col][] = 'Invalid format';
+            }
+        }
+    }
+
+    /**
 	 * @param $patterns
 	 */
 	protected function validatePattern($patterns)
@@ -153,8 +167,7 @@ abstract class Base
 		if ('password' == $type) {
 			$value = '';
 		} else {
-			$value = isset($this->values[$name]) ? $this->values[$name] : '';
-			$value = h($value);
+			$value = isset($this->values[$name]) ? h($this->values[$name]) : '';
 		}
 		$html = input($name, $label, $type, $value);
 		if (isset($this->errors[$name])) {

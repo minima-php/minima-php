@@ -6,7 +6,8 @@
       "": "lib"
     },
     "files": [
-      "lib/Minima/Helper/base.php"
+      "lib/Minima/Helper/base.php",
+      "lib/Minima/Helper/input.php"
     ]
   },
   "authors": [
@@ -16,6 +17,6 @@
     }
   ],
   "require": {
-    "minima-php/potter-orm": "1.0.0"
+    "minima-php/potter-orm": "1.0.1"
   }
 }

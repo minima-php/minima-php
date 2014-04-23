@@ -39,26 +39,6 @@ function link_to($url, $text)
 }
 
 /**
- * Creates an HTML Input
- *
- * @var string $name input name
- * @var string|null $label Label content
- * @var string $type Input type
- * @var string $value Input value
- * @return string Input's HTML
- */
-function input($name, $label = null, $type = 'text', $value = '')
-{
-	if (null === $label)
-		$label = ucfirst($name);
-
-	return "
-<label for='$name'>$label</label>
-<input type='$type' name='$name' id='$name' value='" . $value . "' />
-	";
-}
-
-/**
  * @see htmlspecialchars
  */
 function h($v) { return htmlspecialchars($v); }
