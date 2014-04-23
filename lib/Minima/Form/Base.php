@@ -1,5 +1,5 @@
 <?php
-namespace Form;
+namespace Minima\Form;
 
 /**
  * Class Base

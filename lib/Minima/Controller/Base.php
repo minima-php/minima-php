@@ -1,9 +1,8 @@
 <?php
-namespace Controller;
+namespace Minima\Controller;
 
 /**
  * @property string $method
- * @property \UserSession $session
  * @property \PDO $db
  */
 abstract class Base

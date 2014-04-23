@@ -1,5 +1,6 @@
 <?php
 namespace Model;
+use PotterORM\BaseModel as Base;
 
 class User extends Base
 {

@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "5d9625dc7b338babf3b92286df85c7f8",
+    "packages": [
+        {
+            "name": "minima-php/potter-orm",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/minima-php/potter-orm.git",
+                "reference": "1d09e00528123f55c9647a4590278d24be1a0f12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/minima-php/potter-orm/zipball/1d09e00528123f55c9647a4590278d24be1a0f12",
+                "reference": "1d09e00528123f55c9647a4590278d24be1a0f12",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Vendethiel",
+                    "email": "vendethiel@hotmail.fr"
+                }
+            ],
+            "description": "Magical (and bad) ORM",
+            "time": "2014-04-23 07:41:39"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

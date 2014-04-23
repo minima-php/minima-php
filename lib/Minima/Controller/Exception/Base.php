@@ -1,5 +1,5 @@
 <?php
-namespace Controller\Exception;
+namespace Minima\Controller\Exception;
 
 abstract class Base extends \Exception
 { }

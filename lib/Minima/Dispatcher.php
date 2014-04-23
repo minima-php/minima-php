@@ -1,4 +1,5 @@
 <?php
+namespace Minima;
 
 class Dispatcher
 {

@@ -1,5 +1,4 @@
 <?php
-
 class UserSession
 {
 	/** @var Model\User */
