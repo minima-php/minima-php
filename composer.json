@@ -4,11 +4,7 @@
   "autoload": {
     "psr-0": {
       "": "lib"
-    },
-    "files": [
-      "lib/Minima/Helper/base.php",
-      "lib/Minima/Helper/input.php"
-    ]
+    }
   },
   "authors": [
     {
