@@ -40,7 +40,7 @@ class TemplateRenderer
 			return;
 		self::$helpersInit = true;
 
-		foreach (array('lib', 'app') as $prefix) {
+		foreach (array('app', __DIR__ . '/lib') as $prefix) {
 			foreach (glob($prefix . '/Helper/*.php') as $helper) {
 				include $helper;
 			}
