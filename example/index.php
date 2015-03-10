@@ -48,7 +48,7 @@ try {
 	if (file_exists('db_config.php') && is_array($db_config = include 'db_config.php')) {
 		var_dump($db_config);
 		$db = new PDO('mysql:host=' . $db_config['host'] . ';dbname=' . $db_config['dbname'],
-			$db_config['pass'], $db_config['pass'],
+			$db_config['user'], $db_config['pass'],
 			array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"));
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		Model\Base::setDb($db);
