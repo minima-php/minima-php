@@ -1,4 +1,5 @@
 <?php
+use Minima\TemplateRenderer;
 
 /**
  * Renders a partial template in View/. The view name must be underscore-prefixed
